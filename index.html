@@ -16,7 +16,7 @@
         <nav class="main-nav">
           <div class="header-left">
             <a class="header-logo">
-              <img class="header-logo-img" src="img/logo.png" width="154" height="64" alt="Глейси">
+              <img class="header-logo-img" src="img/logo.svg" width="154" height="64" alt="Глейси">
             </a>
             <ul class="main-nav-list">
               <li class="main-nav-item">
@@ -48,13 +48,13 @@
           <div class="user-block">
             <ul class="user-block-list">
               <li class="user-block-item">
-                <a class="user-block-link user-block-search" href="#"></a>
+                <a class="user-block-link user-block-search" href="#">Поиск</a>
               </li>
               <li class="user-block-item">
                 <a class="user-block-link user-block-enter" href="#">Вход</a>
               </li>
               <li class="user-block-item">
-                <a class="user-block-link user-block-bascket" href="#">Пусто</a>
+                <a class="user-block-link user-block-bascket" href="#" aria-label="Корзина">Пусто</a>
               </li>
             </ul>
             <section class="user-block-info">
@@ -171,7 +171,7 @@
         </div>
 
           <!--Контакты-->
-        <section class="map">
+        <section class="map" id="map-id">
           <div class="container">
             <h2 class="visuallyHidden">Контактная информация</h2>
             <div class="contacts">
@@ -228,7 +228,7 @@
             </ul>
           </div>
           <div class="footer-copyright">
-            <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright-img" src="img/academy_logo.png" width="108" height="38" alt="HTMLAcademy"></a>
+            <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"><img class="copyright-img" src="img/logo-htmlacademy.svg" width="108" height="38" alt="HTMLAcademy"></a>
             <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2017</p>
           </div>
         </div>
@@ -274,5 +274,8 @@
         <input class="btn feedback-btn" type="submit" value="Отправить">
       </form>
     </section>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript" src="js/map-api.js"></script>
   </body>
 </html>
